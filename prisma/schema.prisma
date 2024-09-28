@@ -1,0 +1,95 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Restaurant model
+model Restaurant {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  address     String
+  phone       String
+  email       String
+  tockURL     String
+  giftCardURL String
+  uberEatsURL String
+  doorDashURL String
+  sliceURL    String
+  grubHubURL  String
+  logo        String
+}
+
+
+model Appetizer {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  price       Int
+
+}
+
+model Salad {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  price       Int
+}
+
+model Pizza {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  price       Int
+}
+
+model Pasta {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  price       Int
+}
+
+model AddOn {
+  id    Int    @id @default(autoincrement())
+  name  String
+  price Int
+}
+
+model MeatAndFish {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  price       Int
+}
+
+model Dessert {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  price       Int
+}
+
+model Wine {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  price       Int
+}
+
+model Cocktail {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  price       Int
+}
