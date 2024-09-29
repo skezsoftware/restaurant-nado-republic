@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import ResponsiveAppBar from './components/TopNavBar'
 import LandingPage from './components/LandingPage'
+import MiddleHomePage from "./components/MiddleHomePage";
+import WovenImageList from './components/ImageCollage'
 import SimpleBottomNavigation from './components/BottomNavBar'
 import './App.css'
 
@@ -11,6 +13,8 @@ function App() {
     <>
      <ResponsiveAppBar />
      <LandingPage />
+     <MiddleHomePage />
+     <WovenImageList />
      <SimpleBottomNavigation />
     </>
   )
