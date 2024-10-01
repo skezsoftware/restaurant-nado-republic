@@ -12,10 +12,14 @@ import PatioFlowers from '../assets/patio-flowers.jpg';
 import MarilynTable from '../assets/marilyn-table.jpg';
 import FourWineGlasses from '../assets/four-glasses.jpg';
 import Burrata from '../assets/burrata.jpg';
+import Cotoletta from '../assets/cotoletta.jpg';
+import CacioPepe from '../assets/caciopepe.jpg';
+import Bar from '../assets/bar.jpg';
+import ItalianFlag from '../assets/italian-flag.jpg';
 
 export default function WovenImageList() {
   return (
-    <ImageList variant="woven" cols={3} gap={8}>
+    <ImageList variant="woven" cols={3} gap={8} >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -44,11 +48,11 @@ const itemData = [
     title: 'Sink',
   },
   {
-    img: Cocktails,
+    img: CacioPepe,
     title: 'Books',
   },
   {
-    img: Birthday,
+    img: NadoBottle,
     title: 'Chairs',
   },
   {
@@ -64,15 +68,15 @@ const itemData = [
     title: 'Doors',
   },
   {
-    img: NadoBottle,
+    img: Cotoletta,
     title: 'Coffee',
   },
   {
-    img: FourWineGlasses,
+    img: ItalianFlag,
     title: 'Storage',
   },
   {
-    img: MarilynTable,
+    img: Bar,
     title: 'Coffee table',
   },
   {
