@@ -14,7 +14,7 @@ export default function ReservationButton() {
         variant="contained" 
         id="reservation-button"
         onClick={handleClick}>
-          Reservation
+          Reservations
         </Button>
       </Stack>
     </div>
