@@ -27,6 +27,7 @@ export default function WovenImageList() {
             src={`${item.img}?w=161&fit=crop&auto=format`}
             alt={item.title}
             loading="lazy"
+            style={{ borderRadius: '5px' }}
           />
         </ImageListItem>
       ))}

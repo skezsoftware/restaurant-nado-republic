@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { Link } from "react-router-dom";
 import NadoLogo from "../assets/nado-logo.png";
 import "./TopNavBar.css";
 
@@ -52,8 +53,8 @@ function ResponsiveAppBar() {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href={"#app-bar-with-responsive-menu"}
+            component={Link}
+            to={"/"}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -95,7 +96,7 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleCloseNavMenu} as={Link} to={`/${page}`}>
                   <Typography sx={{ textAlign: "center", color: 'red' }}>{page}</Typography>
                 </MenuItem>
               ))}
@@ -122,6 +123,11 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
+              <Link
+                key={page}
+                to={`/${page.toLowerCase()}`}
+                style={{ textDecoration: "none" }}
+              >
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -129,6 +135,7 @@ function ResponsiveAppBar() {
               >
                 {page}
               </Button>
+              </Link>
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
