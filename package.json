@@ -6,12 +6,13 @@
   "dependencies": {
     "@prisma/client": "^5.20.0",
     "express": "^4.21.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "react-router-dom": "^6.26.2"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
   },
   "scripts": {
-   "start:dev": "nodemon server.js"
-}
+    "start:dev": "nodemon server.js"
+  }
 }
