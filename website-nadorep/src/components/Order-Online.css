@@ -1,0 +1,17 @@
+.order-online-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  gap: 2em;
+}
+#order-button {
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+  height: 75px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

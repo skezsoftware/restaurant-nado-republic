@@ -16,14 +16,7 @@ import { Link } from "react-router-dom";
 import NadoLogo from "../assets/nado-logo.png";
 import "./TopNavBar.css";
 
-const pages = [
-  "About",
-  "Menu",
-  "Order Online",
-  "Reservations",
-  "Gift Cards",
-  "Contact",
-];
+const pages = ["About", "Menu", "Order Online", "Reservations", "Gift Cards"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -48,8 +41,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static" style={{ backgroundColor: "black" }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters >
-          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
+        <Toolbar disableGutters>
           <Typography
             variant="h6"
             noWrap
@@ -77,7 +69,7 @@ function ResponsiveAppBar() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon  />
+              <MenuIcon />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -96,18 +88,24 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} as={Link} to={`/${page}`}>
-                  <Typography sx={{ textAlign: "center", color: 'red' }}>{page}</Typography>
+                <MenuItem
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  as={Link}
+                  to={`/${page.toLowerCase().replace(" ", "")}`}
+                >
+                  <Typography sx={{ textAlign: "center", color: "red" }}>
+                    {page}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
+            component={Link}
+            to={"/"}
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -122,23 +120,61 @@ function ResponsiveAppBar() {
             <img src={NadoLogo} alt="logo" id="fullscreen-logo" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Link
-                key={page}
-                to={`/${page.toLowerCase()}`}
-                style={{ textDecoration: "none" }}
-              >
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-              </Link>
-            ))}
+            {pages.map((page) => {
+              if (page === "Reservations") {
+                return (
+                  <a
+                    key={page}
+                    href="https://www.exploretock.com/nado-republic--coronado" // Replace with the actual URL
+                    // target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Button
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: "white", display: "block" }}
+                    >
+                      {page}
+                    </Button>
+                  </a>
+                );
+              } else if (page === "Gift Cards") {
+                return (
+                  <a
+                    key={page}
+                    href="https://www.toasttab.com/nado-republic-1007-c-ave/giftcards" // Replace with the actual URL
+                    // target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Button
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: "white", display: "block" }}
+                    >
+                      {page}
+                    </Button>
+                  </a>
+                );
+              } else {
+                return (
+                  <Link
+                    key={page}
+                    to={`/${page.toLowerCase().replace(" ", "")}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Button
+                      key={page}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: "white", display: "block" }}
+                    >
+                      {page}
+                    </Button>
+                  </Link>
+                );
+              }
+            })}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -168,7 +204,7 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>

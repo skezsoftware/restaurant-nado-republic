@@ -13,6 +13,7 @@ export default function SimpleBottomNavigation() {
       <Box sx={{ width: 500, padding: 5 }}>
         <BottomNavigation
           showLabels
+          style={{ backgroundColor: "#beac74" }}
           value={value}
           onChange={(event, newValue) => {
             setValue(newValue);
@@ -21,13 +22,20 @@ export default function SimpleBottomNavigation() {
           <a href="https://www.instagram.com/nadorepublic/">
             <BottomNavigationAction
               label="Instagram"
-              icon={<InstagramIcon sx={{ fontSize: 40 }} />}
+              icon={<InstagramIcon sx={{ fontSize: 50 }} />}
             />
           </a>
           <a href="https://www.facebook.com/NADOrepublic">
-            <BottomNavigationAction label="Facebook" icon={<FacebookIcon sx={{ fontSize: 40 }} />} />
+            <BottomNavigationAction
+              label="Facebook"
+              icon={<FacebookIcon sx={{ fontSize: 50 }} />}
+            />
           </a>
         </BottomNavigation>
+        <div className="footer-contact-info">
+          <p>(619)996-3271</p>
+          <p>gm@nadorep.com</p>
+        </div>
       </Box>
     </div>
   );
