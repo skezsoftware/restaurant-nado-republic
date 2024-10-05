@@ -1,8 +1,10 @@
 .about-header {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    color: #333;
 }
 .line-across-aboutpg {
     width: 80%;
@@ -10,16 +12,17 @@
     border-radius: 30%;
     background-color: #000;
     margin: 0 auto;
-    background-color: rgb(187,173,123)
+    background-color: #beac74;
 }
-
 .description-about {
     margin-top: 1.5em;
     text-align: left;
-    letter-spacing: 1.5px;
-    font-size: 1em;
+    letter-spacing: 1px;
+    font-size: 1.1em;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     padding: 1em;
+    color: #333;
+    line-height: 1.1em;
 }
 #about-image {
     margin-top: 1.5em;
@@ -28,6 +31,52 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    border: 5px solid rgb(187,173,123);
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border: 2px solid #7e2900;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    opacity: 0.95;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em;
+}
+/* Desktop View Adjustments */
+@media (min-width: 1024px) {
+    .about-header {
+        font-size: 2em; /* Increase font size for better readability */
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .line-across-aboutpg {
+        width: 60%; /* Adjust width for larger screens */
+        height: 4px; /* Slightly increase height */
+    }
+
+    .description-about {
+        font-size: 1.3em; /* Increase font size for better readability */
+        line-height: 1.5em; /* Improve line height for readability */
+        padding: 2em; /* Increase padding for better spacing */
+        margin-top: 2em;
+    }
+
+    #about-image {
+        width: 50%; /* Adjust width for larger screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove margin */
+        display: block; /* Ensure the image is centered */
+    }
+
+    .about-content {
+        flex-direction: row; /* Arrange items side by side */
+        max-width: 80%; /* Limit the maximum width */
+    }
+
+    .description-about {
+        width: 50%; /* Adjust width for larger screens */
+        padding: 2em; /* Increase padding for better spacing */
+    }
 }

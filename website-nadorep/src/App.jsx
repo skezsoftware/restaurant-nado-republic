@@ -7,8 +7,8 @@ import SimpleBottomNavigation from "./components/BottomNavBar";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutPage from "./components/AboutPage";
-import Menu from "./components/Menu";
-import RedirectToExternal from "./components/RedirectToExternal";
+import Menu from "./components/MenuFolder/DinnerMenu";
+import OrderOnline from "./components/OrderOnline";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,7 +29,7 @@ function App() {
         />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/giftcards" element={<RedirectToExternal url="https://www.toasttab.com/nado-republic-1007-c-ave/giftcards" />} />
+        <Route path="/orderonline" element={<OrderOnline />} />
       </Routes>
 
       <SimpleBottomNavigation />
