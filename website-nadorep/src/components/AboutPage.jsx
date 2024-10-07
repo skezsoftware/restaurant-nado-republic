@@ -1,4 +1,4 @@
-import AboutImage from "../assets/about-page-image.jpg";
+import AboutImage from "../assets/nado-og-site.png";
 import "../components/AboutPage.css";
 
 export default function AboutPage() {
