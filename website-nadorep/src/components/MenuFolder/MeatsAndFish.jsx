@@ -29,6 +29,7 @@ export default function MeatsAndFishDinner() {
           <div key={index} id="dinner-item">
             <p id="item-title">{meatAndFish.name.toUpperCase()}</p>
             <p id="item-description">{meatAndFish.description}</p>
+            <p id="item-price">${meatAndFish.price}</p>
           </div>
         ))}
         <hr
