@@ -1,17 +1,62 @@
+.order-online-background {
+  padding: 2em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.online-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  gap: 1em;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+.line-across-orderpg {
+  width: 60%;
+  height: 5px;
+  background-color: #7e2900;
+  border-radius: 50%;
+  margin: 0 auto;
+  @media screen and (min-width: 800px) {
+    width: 20%;
+  }
+}
+.buttons-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
 .order-online-buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
+  margin: 0 auto;
   gap: 2em;
+  @media screen and (min-width: 800px) {
+    gap: 4em;
+  }
 }
 #order-button {
-  background-color: white;
+  background-color: #beac74;
   color: black;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+  box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.9);
   height: 75px;
+  width: 100%;
+  max-width: 500px;
   img {
     width: 100%;
     height: 100%;
   }
+}
+#delivery-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -19,7 +19,7 @@ import ItalianFlag from '../assets/italian-flag.jpg';
 
 export default function WovenImageList() {
   return (
-    <ImageList variant="woven" cols={3} gap={8} >
+    <ImageList variant="woven" cols={3} gap={8} style={{ marginBottom: '3em'}} >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
