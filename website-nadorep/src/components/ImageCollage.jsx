@@ -3,19 +3,15 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ChefImage from '../assets/chef-image.jpg';
 import Lasanga from '../assets/lasanga.jpg';
 import RedAndWhiteWine from '../assets/red-white-wine.jpg';
-import Cocktails from '../assets/cocktails.jpg';
-import Birthday from '../assets/birthday.jpg';
 import RavioliAndSpaghetti from '../assets/ravioli-spaghetti.jpg';
 import LobsterRisotto from '../assets/lobster-risotto.jpg';
 import NadoBottle from '../assets/nado-bottle.jpg';
 import PatioFlowers from '../assets/patio-flowers.jpg';
-import MarilynTable from '../assets/marilyn-table.jpg';
-import FourWineGlasses from '../assets/four-glasses.jpg';
 import Burrata from '../assets/burrata.jpg';
 import Cotoletta from '../assets/cotoletta.jpg';
 import CacioPepe from '../assets/caciopepe.jpg';
 import Bar from '../assets/bar.jpg';
-import ItalianFlag from '../assets/italian-flag.jpg';
+import SpaghettiPesto from '../assets/spaghetti-pesto.jpg';
 
 export default function WovenImageList() {
   return (
@@ -69,11 +65,11 @@ const itemData = [
     title: 'Doors',
   },
   {
-    img: Cotoletta,
+    img: SpaghettiPesto,
     title: 'Coffee',
   },
   {
-    img: ItalianFlag,
+    img: Cotoletta,
     title: 'Storage',
   },
   {
