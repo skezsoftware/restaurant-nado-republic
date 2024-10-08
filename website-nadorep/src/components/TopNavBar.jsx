@@ -60,7 +60,7 @@ function ResponsiveAppBar() {
             <img src={NadoLogo} alt="logo" id="fullscreen-logo" />
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }  }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -88,14 +88,21 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                
                 <MenuItem
                   key={page}
                   onClick={handleCloseNavMenu}
                   as={Link}
                   to={`/${page.toLowerCase().replace(" ", "")}`}
                 >
-                  <Typography sx={{ textAlign: "center", color: "black", fontFamily: "'Courier New', Courier, monospace", fontWeight: '700', fontSize: '1.3em' }}>
+                  <Typography
+                    sx={{
+                      textAlign: "center",
+                      color: "black",
+                      fontFamily: "'Courier New', Courier, monospace",
+                      fontWeight: "700",
+                      fontSize: "1.3em",
+                    }}
+                  >
                     {page}
                   </Typography>
                 </MenuItem>

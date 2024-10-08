@@ -15,11 +15,10 @@
     background-color: #7e2900;
 }
 .description-about {
-    /* margin-top: 1em; */
     text-align: left;
     letter-spacing: 1px;
     font-size: 1.2em;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     padding: 1em;
     color: #333;
     line-height: 1.5em;
@@ -31,7 +30,6 @@
     height: 500px;
     object-fit: contain;
     border-radius: 10px;
-    /* box-shadow: 2px 2px 4px rgba(0,0,0,0.9); */
 }
 .about-content {
     display: flex;

@@ -10,7 +10,7 @@ export default function SimpleBottomNavigation() {
 
   return (
     <div className="bottom-nav-bar">
-      <Box sx={{ width: 500, padding: 5 }}>
+      <Box sx={{ width: 600, padding: 5 }}>
         <BottomNavigation
           showLabels
           style={{ backgroundColor: "#beac74" }}
@@ -22,19 +22,20 @@ export default function SimpleBottomNavigation() {
           <a href="https://www.instagram.com/nadorepublic/">
             <BottomNavigationAction
               label="Instagram"
-              icon={<InstagramIcon sx={{ fontSize: 50 }} />}
+              icon={<InstagramIcon sx={{ fontSize: 60 }} />}
             />
           </a>
           <a href="https://www.facebook.com/NADOrepublic">
             <BottomNavigationAction
               label="Facebook"
-              icon={<FacebookIcon sx={{ fontSize: 50 }} />}
+              icon={<FacebookIcon sx={{ fontSize: 60 }} />}
             />
           </a>
         </BottomNavigation>
         <div className="footer-contact-info">
           <p>(619)996-3271</p>
           <p>gm@nadorep.com</p>
+          <p className="footer-address">1007 C Ave, Coronado, CA 92118</p>
         </div>
       </Box>
     </div>

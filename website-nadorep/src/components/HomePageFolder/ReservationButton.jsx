@@ -10,10 +10,11 @@ export default function ReservationButton() {
   return (
     <div className="reservation-button-container">
       <Stack spacing={2} direction="row">
-        <Button 
-        variant="contained" 
-        id="reservation-button"
-        onClick={handleClick}>
+        <Button
+          variant="contained"
+          id="reservation-button"
+          onClick={handleClick}
+        >
           Reservations
         </Button>
       </Stack>

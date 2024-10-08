@@ -1,18 +1,14 @@
-import { useState } from "react";
-import ResponsiveAppBar from "./components/TopNavBar";
-import LandingPage from "./components/LandingPage";
-import MiddleHomePage from "./components/MiddleHomePage";
-import WovenImageList from "./components/ImageCollage";
-import SimpleBottomNavigation from "./components/BottomNavBar";
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AboutPage from "./components/AboutPage";
+import ResponsiveAppBar from "./components/TopNavBar";
+import LandingPage from "./components/HomePageFolder/LandingPage";
+import SimpleBottomNavigation from "./components/BottomNavBar";
+import AboutPage from "./components/AboutPageFolder/AboutPage";
 import Menu from "./components/MenuFolder/DinnerMenu";
-import OrderOnline from "./components/OrderOnline";
+import OrderOnline from "./components/OrderOnlineFolder/OrderOnline";
+import ScrollToTop from "./components/ScrollToTop";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <BrowserRouter>
       <ResponsiveAppBar />
@@ -22,8 +18,6 @@ function App() {
           element={
             <>
               <LandingPage />
-              <MiddleHomePage />
-              <WovenImageList />
             </>
           }
         />
@@ -31,7 +25,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/orderonline" element={<OrderOnline />} />
       </Routes>
-
+      <ScrollToTop />
       <SimpleBottomNavigation />
     </BrowserRouter>
   );

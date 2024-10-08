@@ -1,5 +1,5 @@
-import AboutImage from "../assets/nado-og-site.png";
-import "../components/AboutPage.css";
+import AboutImage from "../../assets/nado-og-site.png";
+import "./AboutPage.css";
 
 export default function AboutPage() {
   return (

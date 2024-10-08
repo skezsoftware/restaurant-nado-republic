@@ -1,5 +1,7 @@
 import ReservationButton from "./ReservationButton";
-import landingPageImage from "../assets/nado-patio-image.jpg";
+import landingPageImage from "../../assets/nado-patio-image.jpg";
+import MiddleHomePage from "./MiddleHomePage";
+import ImageCollage from "./ImageCollage";
 
 export default function LandingPage() {
   return (
@@ -12,7 +14,8 @@ export default function LandingPage() {
         />
         <ReservationButton />
       </section>
-      
+      <MiddleHomePage />
+      <ImageCollage />
     </>
   );
 }
