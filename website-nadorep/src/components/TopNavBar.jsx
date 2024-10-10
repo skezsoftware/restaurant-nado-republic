@@ -7,17 +7,19 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 import NadoLogo from "../assets/nado-logo.png";
 import "./TopNavBar.css";
 
-const pages = ["About", "Menu", "Order Online", "Reservations", "Gift Cards"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = [
+  {title:"About",link:`/about`}, 
+  {title:"Menu",link:'/menu'}, 
+  {title:"Order Online",link:'/orderonline'}, 
+  {title:"Reservations",link:'https://www.exploretock.com/nado-republic--coronado'}, 
+  {title:"Gift Cards",link:"https://www.toasttab.com/nado-republic-1007-c-ave/giftcards"}
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -39,7 +41,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "black" }}>
+    <AppBar position="static" style={{ backgroundColor: "black"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -89,21 +91,22 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem
-                  key={page}
+                  key={page.title}
                   onClick={handleCloseNavMenu}
                   as={Link}
-                  to={`/${page.toLowerCase().replace(" ", "")}`}
+                  to={page.link}
                 >
                   <Typography
                     sx={{
                       textAlign: "center",
                       color: "black",
                       fontFamily: "'Courier New', Courier, monospace",
-                      fontWeight: "700",
-                      fontSize: "1.3em",
+                      fontWeight: "600",
+                      fontSize: "1.4em",
+                      ":hover": { color: "#beac74" }
                     }}
                   >
-                    {page}
+                    {page.title}
                   </Typography>
                 </MenuItem>
               ))}
@@ -129,90 +132,33 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => {
-              if (page === "Reservations") {
-                return (
-                  <a
-                    key={page}
-                    href="https://www.exploretock.com/nado-republic--coronado" // Replace with the actual URL
-                    // target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Button
-                      onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "white", display: "block" }}
-                    >
-                      {page}
-                    </Button>
-                  </a>
-                );
-              } else if (page === "Gift Cards") {
-                return (
-                  <a
-                    key={page}
-                    href="https://www.toasttab.com/nado-republic-1007-c-ave/giftcards" // Replace with the actual URL
-                    // target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Button
-                      onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "white", display: "block" }}
-                    >
-                      {page}
-                    </Button>
-                  </a>
-                );
-              } else {
                 return (
                   <Link
-                    key={page}
-                    to={`/${page.toLowerCase().replace(" ", "")}`}
+                    key={page.title}
+                    to={page.link}
                     style={{ textDecoration: "none" }}
                   >
                     <Button
-                      key={page}
                       onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "white", display: "block" }}
+                      sx={{ my: 2, display: "block" }}
                     >
-                      {page}
+                      <Typography
+                    sx={{
+                      textAlign: "center",
+                      color: "white",
+                      fontFamily: "'Courier New', Courier, monospace",
+                      fontWeight: "550",
+                      fontSize: "1.5em",
+                      ":hover": { color: "#beac74" },
+                    }}
+                  >
+                      {page.title}
+                      </Typography>
                     </Button>
                   </Link>
                 );
-              }
             })}
           </Box>
-          {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography sx={{ textAlign: "center", color: 'orange' }}>
-                    {setting}
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
