@@ -29,7 +29,7 @@ export default function PizzasDinner() {
           <div key={index} id="dinner-item">
             <p id="item-title">{pizza.name.toUpperCase()}</p>
             <p id="item-description">{pizza.description}</p>
-            <p id="item-price">${pizza.price}</p>
+            {/* <p id="item-price">${pizza.price}</p> */}
           </div>
         ))}
         <hr

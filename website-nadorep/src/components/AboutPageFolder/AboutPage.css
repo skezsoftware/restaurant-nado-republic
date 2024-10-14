@@ -4,15 +4,16 @@
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    color: #333;
+    color: #beac74;
 }
 .line-across-aboutpg {
     width: 60%;
     height: 5px;
     border-radius: 30%;
-    background-color: #000;
+    background-color: #beac74;
     margin: 0 auto;
-    background-color: #7e2900;
+    color: #beac74;
+    background-color: #beac74;
 }
 .description-about {
     text-align: left;
@@ -20,7 +21,7 @@
     font-size: 1.2em;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     padding: 1em;
-    color: #333;
+    color: #beac74;
     line-height: 1.5em;
 }
 #about-image {

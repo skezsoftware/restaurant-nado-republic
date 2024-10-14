@@ -29,7 +29,7 @@ export default function PastasDinner() {
           <div key={index} id="dinner-item">
             <p id="item-title">{pasta.name.toUpperCase()}</p>
             <p id="item-description">{pasta.description}</p>
-            <p id="item-price">${pasta.price}</p>
+            {/* <p id="item-price">${pasta.price}</p> */}
           </div>
         ))}
         <hr

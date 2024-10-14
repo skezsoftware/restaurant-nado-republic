@@ -19,7 +19,7 @@
   align-items: center;
   width: 40%;
   height: 5px;
-  background-color: #7e2900;
+  background-color: #beac74;
   border-radius: 50%;
   text-align: center;
   margin: 0 auto;
@@ -33,6 +33,7 @@
   width: calc(100% - 2rem);
   margin-bottom: 3em;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
 }
 .manu-section-header {
   font-size: 1.6em;

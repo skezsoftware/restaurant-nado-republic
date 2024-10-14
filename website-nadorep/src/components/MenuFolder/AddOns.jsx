@@ -28,7 +28,7 @@ export default function AddOns() {
         {addOns.map((addOn, index) => (
           <div key={index} id="dinner-item">
             <p id="item-title">{addOn.name.toUpperCase()}</p>
-            <p id="item-price">${addOn.price}</p>
+            {/* <p id="item-price">${addOn.price}</p> */}
           </div>
         ))}
         <hr
