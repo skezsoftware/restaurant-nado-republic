@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Veal Saltimbocca",
+    "description": "Butter and sage, wrapped in prosciutto, served with seasonal vegetables",
+    "price": 36
+  },
+  {
+    "name": "Grilled Salmon",
+    "description": "Lemon butter sauce, served with seasonal vegetables",
+    "price": 36
+  },
+  {
+    "name": "Cotoletta alla Milanese",
+    "description": "Breaded chicken breast, served with seasonal vegetables",
+    "price": 34
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Tuna Tartare",
+    "description": "Fresh tuna with soy sauce, garlic, egg yolk, spicy mayo, sesame, arugula",
+    "price": 16
+  },
+  {
+    "name": "Calamari",
+    "description": "Fried, topped with parsley and served with a side of spicy mayonnaise",
+    "price": 15
+  },
+  {
+    "name": "Brussels Sprouts",
+    "description": "Lemon and Pecorino Romano cheese",
+    "price": 16
+  },
+  {
+    "name": "Burrata",
+    "description": "Fresh burrata cheese served with arugula and cherry tomatoes",
+    "price": 18
+  },
+  {
+    "name": "Polpette",
+    "description": "Homemade ground beef meatballs made with bread crumbs and cheese, served with marinara sauce",
+    "price": 16
+  }
+]

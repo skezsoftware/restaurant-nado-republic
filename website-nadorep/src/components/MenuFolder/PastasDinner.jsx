@@ -1,22 +1,23 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import pastas from '../../mocks/pastas.json'
 
 export default function PastasDinner() {
-  const [pastas, setPastas] = useState([]);
+  // const [pastas, setPastas] = useState([]);
 
-  async function fetchPastas() {
-    try {
-      const response = await fetch("http://localhost:3000/api/pastas");
-      const data = await response.json();
-      console.log(data);
-      setPastas(data); // Update state with fetched data
-    } catch (error) {
-      console.error(error);
-    }
-  }
+  // async function fetchPastas() {
+  //   try {
+  //     const response = await fetch("http://localhost:3000/api/pastas");
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setPastas(data); // Update state with fetched data
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }
 
-  useEffect(() => {
-    fetchPastas();
-  }, []);
+  // useEffect(() => {
+  //   fetchPastas();
+  // }, []);
 
   return (
     <>

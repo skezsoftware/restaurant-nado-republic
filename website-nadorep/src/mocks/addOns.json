@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Meatball (one)",
+    "price": 6
+  },
+  {
+    "name": "Shrimp",
+    "price": 6
+  },
+  {
+    "name": "Mushrooms",
+    "price": 3
+  },
+  {
+    "name": "Sausage",
+    "price": 4
+  },
+  {
+    "name": "Truffle Oil",
+    "price": 3
+  },
+  {
+    "name": "Burrata",
+    "price": 6
+  },
+  {
+    "name": "Crispy Prosciutto",
+    "price": 4
+  },
+  {
+    "name": "Sliced Prosciutto",
+    "price": 5
+  },
+  {
+    "name": "Veggies",
+    "price": 6
+  }
+]

@@ -1,22 +1,23 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import appetizers from '../../mocks/appetizers.json'
 
 export default function AppetizersDinner() {
-  const [appetizers, setAppetizers] = useState([]);
+  // const [appetizers, setAppetizers] = useState([]);
 
-  async function fetchAppetizers() {
-    try {
-      const response = await fetch("http://localhost:3000/api/appetizers");
-      const data = await response.json();
-      console.log(data);
-      setAppetizers(data); // Update state with fetched data
-    } catch (error) {
-      console.error(error);
-    }
-  }
+  // async function fetchAppetizers() {
+  //   try {
+  //     const response = await fetch("http://localhost:3000/api/appetizers");
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setAppetizers(data); // Update state with fetched data
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }
 
-  useEffect(() => {
-    fetchAppetizers();
-  }, []);
+  // useEffect(() => {
+  //   fetchAppetizers();
+  // }, []);
 
   return (
     <>
