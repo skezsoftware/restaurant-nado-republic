@@ -1,22 +1,23 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import salads from '../../mocks/salads.json';
 
 export default function SaladsDinner() {
-  const [salads, setSalads] = useState([]);
+  // const [salads, setSalads] = useState([]);
 
-  async function fetchSalads() {
-    try {
-      const response = await fetch("http://localhost:3000/api/salads");
-      const data = await response.json();
-      console.log(data);
-      setSalads(data); // Update state with fetched data
-    } catch (error) {
-      console.error(error);
-    }
-  }
+  // async function fetchSalads() {
+  //   try {
+  //     const response = await fetch("http://localhost:3000/api/salads");
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setSalads(data); // Update state with fetched data
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }
 
-  useEffect(() => {
-    fetchSalads();
-  }, []);
+  // useEffect(() => {
+  //   fetchSalads();
+  // }, []);
 
   return (
     <>
@@ -29,7 +30,7 @@ export default function SaladsDinner() {
           <div key={index} id="dinner-item">
             <p id="item-title">{salad.name.toUpperCase()}</p>
             <p id="item-description">{salad.description}</p>
-            <p id="item-price">${salad.price}</p>
+            {/* <p id="item-price">${salad.price}</p> */}
           </div>
         ))}
         <hr

@@ -2,6 +2,10 @@
   padding: 2em;
   width: 100%;
   margin-bottom: 2em;
+  color: #beac74;
+  border: 3px solid #beac74;
+  border-radius: 4px;
+  
 }
 .online-header {
   display: flex;
@@ -17,7 +21,7 @@
 .line-across-orderpg {
   width: 60%;
   height: 5px;
-  background-color: #7e2900;
+  background-color: #beac74;
   border-radius: 50%;
   margin: 0 auto;
   @media screen and (min-width: 800px) {

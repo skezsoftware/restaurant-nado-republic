@@ -1,22 +1,22 @@
-import { useEffect, useState } from "react";
-
+// import { useEffect, useState } from "react";
+import pizzas from '../../mocks/pizzas.json'
 export default function PizzasDinner() {
-  const [pizzas, setPizzas] = useState([]);
+  // const [pizzas, setPizzas] = useState([]);
 
-  async function fetchPizzas() {
-    try {
-      const response = await fetch("http://localhost:3000/api/pizzas");
-      const data = await response.json();
-      console.log(data);
-      setPizzas(data); // Update state with fetched data
-    } catch (error) {
-      console.error(error);
-    }
-  }
+  // async function fetchPizzas() {
+  //   try {
+  //     const response = await fetch("http://localhost:3000/api/pizzas");
+  //     const data = await response.json();
+  //     console.log(data);
+  //     setPizzas(data); // Update state with fetched data
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }
 
-  useEffect(() => {
-    fetchPizzas();
-  }, []);
+  // useEffect(() => {
+  //   fetchPizzas();
+  // }, []);
 
   return (
     <>
@@ -29,7 +29,7 @@ export default function PizzasDinner() {
           <div key={index} id="dinner-item">
             <p id="item-title">{pizza.name.toUpperCase()}</p>
             <p id="item-description">{pizza.description}</p>
-            <p id="item-price">${pizza.price}</p>
+            {/* <p id="item-price">${pizza.price}</p> */}
           </div>
         ))}
         <hr

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Fusilli Pesto",
+    "description": "Authentic ligurian pesto with pinoli nuts",
+    "price": 22
+  },
+  {
+    "name": "Bucatini Amatriciana",
+    "description": "Marinara sauce, guanciale, dash of chili oil and pecorino cheese",
+    "price": 25
+  },
+  {
+    "name": "Pappardelle Bolognese",
+    "description": "Ground beef, tomatoes, carrots, dash of red wine",
+    "price": 26
+  },
+  {
+    "name": "Rigatoni Boscaiola",
+    "description": "Sausage, mushrooms, homemade cream sauce available pink or red",
+    "price": 26
+  },
+  {
+    "name": "Ravioli Lobster",
+    "description": "Filled with lobster, served with a vodka sauce",
+    "price": 28
+  },
+  {
+    "name": "Gnocchi Truffle",
+    "description": "Filled with asiago cheese, white creamy sauce and black truffle",
+    "price": 28
+  }
+]

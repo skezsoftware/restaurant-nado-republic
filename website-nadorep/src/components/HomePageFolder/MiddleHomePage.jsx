@@ -20,9 +20,15 @@ export default function HoursAndLocation() {
       </div>
       <hr className="line-across"></hr>
       <div style={{ lineHeight: "2em" }} id="h-l-item">
-        MON - THU: 4PM - 10pm <br />
-        FRI - SAT: 12PM - 11:30PM <br />
-        SUN: 12PM - 10PM
+       <ul className="hours-list">
+        <li><strong><span id="day-of-week">SUNDAY</span></strong><br />12PM - 10PM<br /> KITCHEN: 12PM - 9PM</li>
+        <li><strong><span id="day-of-week">MONDAY - THURSDAY</span></strong><br /> 4PM - 10PM<br />KITCHEN: 4PM - 9PM</li>
+        {/* <li><strong>TUESDAY:</strong>4PM - 10PM<br />KITCHEN: 4PM - 9PM</li>
+        <li><strong>WEDNESDAY:</strong>4PM - 10PM<br />KITCHEN: 4PM - 9PM</li>
+        <li><strong>THURSDAY:</strong>4PM - 10PM<br />KITCHEN: 4PM - 9PM</li> */}
+        <li><strong><span id="day-of-week">FRIDAY & SATURDAY</span></strong><br />12PM - 11:30PM<br />KITCHEN: 12PM - 9:30PM</li>
+        {/* <li><strong><span id="day-of-week">SATURDAY</span></strong><br />12PM - 11:30PM<br />KITCHEN: 12PM - 9:30PM</li> */}
+       </ul>
       </div>
     </div>
   );

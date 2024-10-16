@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Caesar Salad",
+    "description": "Fresh lettuce, home made focaccia croutons, anchovies, shaved parmesan cheese, and Caesar dressing",
+    "price": 16
+  },
+  {
+    "name": "Strawberry Salad",
+    "description": "Arugula, strawberry vinaigarette, goat cheese, toasted almonds, crispy parmesan",
+    "price": 16
+  },
+  {
+    "name": "Gorgonzola Salad",
+    "description": "Organic spring mix, gorgonzola cheese, crispy prosciutto, and dry apricots",
+    "price": 16
+  },
+  {
+    "name": "Spinach Salad",
+    "description": "Spinach, feta, cucumber, cherry tomatoes, olives, and balsamic dressing",
+    "price": 16
+  }
+]
