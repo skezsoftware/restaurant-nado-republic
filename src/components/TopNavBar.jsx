@@ -26,7 +26,9 @@ const pages = [
     title: "Gift Cards",
     link: "https://www.toasttab.com/nado-republic-1007-c-ave/giftcards",
   },
-  { title: "Catering" },
+  { title: "Catering",
+    link: "/catering" 
+   },
 ];
 
 function ResponsiveAppBar() {
@@ -104,7 +106,9 @@ function ResponsiveAppBar() {
                     fontSize="1.6em"
                     color={"black"}
                     key={page.title}
-                  >
+                    onClose={handleCloseNavMenu} // Pass the handleCloseNavMenu function
+    >
+                  
                     {page.title}
                   </BasicMenu>
                 ) : (
