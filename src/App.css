@@ -31,7 +31,7 @@
 
 /* Apply the fade-in animation to the landing page */
 .fade-in {
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn .5s ease-in;
 }
 
 /* RESERVATION BUTTON CENTER OF PAGE */
