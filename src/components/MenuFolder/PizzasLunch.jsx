@@ -1,19 +1,18 @@
-import appetizers from '../../mocks/appetizers.json'
+import pizzas from '../../mocks/pizzasLunch.json'
 
 export default function AppetizersDinner() {
 
   return (
     <>
       <header className="manu-section-header">
-        <h2>APPETIZERS</h2>
+        <h2>PIZZAS</h2>
       </header>
       <hr className="line-across-menu"></hr>
       <div>
-        {appetizers.map((appetizer, index) => (
+        {pizzas.map((pizza, index) => (
           <div key={index} id="dinner-item">
-            <p id="item-title">{appetizer.name.toUpperCase()}</p>
-            <p id="item-description">{appetizer.description}</p>
-            {/* <p id="item-price">${appetizer.price}</p> */}
+            <p id="item-title">{pizza.name.toUpperCase()}</p>
+            <p id="item-description">{pizza.description}</p>
           </div>
         ))}
         <hr

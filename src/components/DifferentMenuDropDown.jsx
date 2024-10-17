@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 
 export default function BasicMenu({
   children,
@@ -54,7 +55,7 @@ export default function BasicMenu({
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose}>
+        <MenuItem component={Link} to="/dinner" onClick={handleClose}>
           <Typography
             sx={{
               textAlign: "center",
@@ -69,7 +70,7 @@ export default function BasicMenu({
             Dinner
           </Typography>
         </MenuItem>
-        <MenuItem onClick={handleClose}>
+        <MenuItem component={Link} to="/lunch" onClick={handleClose}>
           <Typography
             sx={{
               textAlign: "center",

@@ -3,7 +3,8 @@ import ResponsiveAppBar from "./components/TopNavBar";
 import LandingPage from "./components/HomePageFolder/LandingPage";
 import SimpleBottomNavigation from "./components/BottomNavBar";
 import AboutPage from "./components/AboutPageFolder/AboutPage";
-import Menu from "./components/MenuFolder/DinnerMenu";
+import DinnerMenu from "./components/MenuFolder/DinnerMenu";
+import LunchMenu from "./components/MenuFolder/LunchMenu";
 import OrderOnline from "./components/OrderOnlineFolder/OrderOnline";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
@@ -22,7 +23,8 @@ function App() {
           }
         />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/dinner" element={<DinnerMenu />} />
+        <Route path="/lunch" element={<LunchMenu />} />
         <Route path="/orderonline" element={<OrderOnline />} />
       </Routes>
       <ScrollToTop />
