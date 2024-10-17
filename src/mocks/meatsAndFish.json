@@ -13,5 +13,10 @@
     "name": "Cotoletta alla Milanese",
     "description": "Breaded chicken breast, served with seasonal vegetables",
     "price": 34
+  },
+  {
+    "name": "Meat of the Day",
+    "description": "Ask the server for the meat of the day",
+    "price": 34
   }
 ]

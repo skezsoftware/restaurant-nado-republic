@@ -49,6 +49,7 @@
   background-color: #beac74;
   color: black;
   box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.9);
+  border: 5px solid whitesmoke;
   height: 75px;
   width: 100%;
   max-width: 500px;

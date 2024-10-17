@@ -18,7 +18,8 @@ const pages = [
   {title:"Menu",link:'/menu'}, 
   {title:"Order Online",link:'/orderonline'}, 
   {title:"Reservations",link:'https://www.exploretock.com/nado-republic--coronado'}, 
-  {title:"Gift Cards",link:"https://www.toasttab.com/nado-republic-1007-c-ave/giftcards"}
+  {title:"Gift Cards",link:"https://www.toasttab.com/nado-republic-1007-c-ave/giftcards"},
+  {title: "Catering"}
 ];
 
 function ResponsiveAppBar() {
@@ -61,7 +62,6 @@ function ResponsiveAppBar() {
           >
             <img src={NadoLogo} alt="logo" id="fullscreen-logo" />
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"

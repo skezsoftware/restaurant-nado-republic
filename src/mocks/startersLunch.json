@@ -1,0 +1,37 @@
+[
+    {
+      "name": "Pane Rustico",
+      "description": "Crispy homemade bread, 24 hour levitation, blend of four artisan italian flours, served with truffle or italian herb butter",
+      "price": 5
+    },
+    {
+      "name": "Calamari",
+      "description": "Fried, topped with parsley and served with a side of spicy mayonnaise",
+      "price": 13
+    },
+    {
+      "name": "Burrata (V)",
+      "description": "Fresh burrata cheese served with arugula and cherry tomatoes",
+      "price": 15
+    },
+    {
+      "name": "Meatballs",
+      "description": "Homemade ground beef meatballs made with bread crumbs and cheese, served with marinara sauce",
+      "price": 15
+    },
+    {
+        "name": "Caesar Salad",
+        "description": "Fresh lettuce, home made focaccia croutons, anchovies, shaved parmesan cheese, and Caesar dressing",
+        "price": 13
+      },
+      {
+        "name": "Gorgonzola Salad",
+        "description": "Organic spring mix, gorgonzola cheese, crispy prosciutto, and dry apricots",
+        "price": 14
+      },
+      {
+        "name": "Spinach Salad (V)",
+        "description": "Spinach, feta, cucumber, cherry tomatoes, olives, and balsamic dressing",
+        "price": 14
+      }
+  ]
