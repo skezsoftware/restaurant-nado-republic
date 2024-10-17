@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import ResponsiveAppBar from "./components/TopNavBar";
 import LandingPage from "./components/HomePageFolder/LandingPage";
 import SimpleBottomNavigation from "./components/BottomNavBar";
@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ResponsiveAppBar />
       <Routes>
         <Route
@@ -27,7 +27,7 @@ function App() {
       </Routes>
       <ScrollToTop />
       <SimpleBottomNavigation />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
