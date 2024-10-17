@@ -1,6 +1,11 @@
 [
   {
-    "name": "Fusilli Pesto",
+    "name": "Spaghetti Cacio & Pepe (V)",
+    "description": "Pecorino cheese, cream, black pepper",
+    "price": 22
+  },
+  {
+    "name": "Fusilli Pesto (V)",
     "description": "Authentic ligurian pesto with pinoli nuts",
     "price": 22
   },
@@ -25,7 +30,7 @@
     "price": 28
   },
   {
-    "name": "Gnocchi Truffle",
+    "name": "Gnocchi Truffle (V)",
     "description": "Filled with asiago cheese, white creamy sauce and black truffle",
     "price": 28
   }

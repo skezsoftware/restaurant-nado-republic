@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Fusilli Pesto (V)",
+      "description": "Authentic ligurian pesto with pinoli nuts, burrata cheese",
+      "price": 20
+    },
+    {
+      "name": "Tonnarelli Arrabbiata",
+      "description": "Marinara sauce, calabrian chili, parsley",
+      "price": 18
+    },
+    {
+      "name": "Spaghetti Al Sugo E Meatball",
+      "description": "Marinara sauce, homemade meatballs",
+      "price": 19
+    },
+    {
+      "name": "Ravioli Cacio E Pepe",
+      "description": "Homemade pecorino cheese, cream, black pepper",
+      "price": 17
+    },
+    {
+      "name": "Rigatoni Boscaiola",
+      "description": "Sausage, mushrooms, homemade cream sauce available pink or red",
+      "price": 22
+    }
+  ]

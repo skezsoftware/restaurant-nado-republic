@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Margherita (V)",
+      "description": "Tomato sauce & mozzarella cheese",
+      "price": 17
+    },
+    {
+      "name": "Piccante",
+      "description": "Tomato sauce, mozzarella cheese, spicy salami",
+      "price": 20
+    },
+    {
+      "name": "Primavera (V)",
+      "description": "Tomato sauce, mozzarella cheese, mixed vegetables",
+      "price": 18
+    }
+  ]
+  

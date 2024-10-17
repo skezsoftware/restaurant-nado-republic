@@ -1,5 +1,10 @@
 [
   {
+    "name": "Pane Rustico",
+    "description": "Crispy homemade bread, 24 hour levitation, blend of four artisan italian flours, served with truffle or italian herb butter",
+    "price": 5
+  },
+  {
     "name": "Tuna Tartare",
     "description": "Fresh tuna with soy sauce, garlic, egg yolk, spicy mayo, sesame, arugula",
     "price": 16
@@ -10,12 +15,12 @@
     "price": 15
   },
   {
-    "name": "Brussels Sprouts",
+    "name": "Brussels Sprouts (V)",
     "description": "Lemon and Pecorino Romano cheese",
     "price": 16
   },
   {
-    "name": "Burrata",
+    "name": "Burrata (V)",
     "description": "Fresh burrata cheese served with arugula and cherry tomatoes",
     "price": 18
   },

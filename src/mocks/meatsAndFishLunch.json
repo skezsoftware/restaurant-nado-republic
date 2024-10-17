@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Grilled Salmon",
+    "description": "Lemon butter sauce, served with house salad",
+    "price": 30
+  },
+  {
+    "name": "Cotoletta alla Milanese",
+    "description": "Breaded chicken breast, served with house salad",
+    "price": 26
+  }
+]

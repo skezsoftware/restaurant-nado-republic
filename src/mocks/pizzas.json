@@ -1,6 +1,6 @@
 [
   {
-    "name": "Margherita",
+    "name": "Margherita (V)",
     "description": "Tomato sauce & mozzarella cheese",
     "price": 17
   },
@@ -15,17 +15,17 @@
     "price": 22
   },
   {
-    "name": "4 Formaggi",
+    "name": "4 Formaggi (V)",
     "description": "Mozzarella cheese, four selected italian cheeses",
     "price": 18
   },
   {
-    "name": "Puttanesca",
-    "description": "Tomato sauce, olives, chili, oregano, garlic, parsley, anchovies",
-    "price": 18
+    "name": "Broccolina",
+    "description": "Mozzarella cheese, broccolini, italian sausage, burrata cheese",
+    "price": 22
   },
   {
-    "name": "Pesto",
+    "name": "Pesto (V)",
     "description": "Pesto sauce, mozzarella cheese, cherry tomatoes, parmesan flakes",
     "price": 19
   }
