@@ -5,12 +5,12 @@ import Lasanga from "../../assets/lasanga.jpg";
 import RedAndWhiteWine from "../../assets/red-white-wine.jpg";
 import RavioliAndSpaghetti from "../../assets/ravioli-spaghetti.jpg";
 import LobsterRisotto from "../../assets/lobster-risotto.jpg";
-import NadoBottle from "../../assets/nado-bottle.jpg";
-import PatioFlowers from "../../assets/patio-flowers.jpg";
+import EatingIce from "../../assets/eating-ice.jpg";
+import ElsaEating from "../../assets/elsa-eating.jpg";
 import Burrata from "../../assets/burrata.jpg";
+import Brothers from "../../assets/brothers.jpg";
 import Cotoletta from "../../assets/cotoletta.jpg";
 import CacioPepe from "../../assets/caciopepe.jpg";
-import Bar from "../../assets/bar.jpg";
 import SpaghettiPesto from "../../assets/spaghetti-pesto.jpg";
 
 export default function WovenImageList() {
@@ -49,8 +49,8 @@ const itemData = [
     title: "Cacio Pepe",
   },
   {
-    img: NadoBottle,
-    title: "Bottle of wine",
+    img: ElsaEating,
+    title: "Eating pizza",
   },
   {
     img: Burrata,
@@ -61,8 +61,8 @@ const itemData = [
     title: "Ravioli and spaghetti",
   },
   {
-    img: PatioFlowers,
-    title: "Flowers on patio",
+    img: Brothers,
+    title: "Brothers",
   },
   {
     img: SpaghettiPesto,
@@ -73,8 +73,8 @@ const itemData = [
     title: "Cotoletta",
   },
   {
-    img: Bar,
-    title: "Bar",
+    img: EatingIce,
+    title: "Eating Ice",
   },
   {
     img: LobsterRisotto,

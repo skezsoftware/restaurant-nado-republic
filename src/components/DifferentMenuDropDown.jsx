@@ -12,6 +12,7 @@ export default function BasicMenu({
   fontSize,
   my = 0,
   ml = 0,
+  onClose,
 }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -20,6 +21,7 @@ export default function BasicMenu({
   };
   const handleClose = () => {
     setAnchorEl(null);
+    if (onClose) onClose(); // Call the onClose function passed as a prop
   };
 
   return (

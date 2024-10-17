@@ -33,6 +33,22 @@
 .fade-in {
   animation: fadeIn .5s ease-in;
 }
+/* Add this to your CSS file */
+.mobile-video {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .landing-page-image {
+    display: none;
+  }
+}
 
 /* RESERVATION BUTTON CENTER OF PAGE */
 .reservation-button-container {

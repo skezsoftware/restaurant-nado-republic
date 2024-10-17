@@ -7,6 +7,7 @@ import DinnerMenu from "./components/MenuFolder/DinnerMenu";
 import LunchMenu from "./components/MenuFolder/LunchMenu";
 import OrderOnline from "./components/OrderOnlineFolder/OrderOnline";
 import ScrollToTop from "./components/ScrollToTop";
+import Catering from "./components/CateringFolder/Catering";
 import "./App.css";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/dinner" element={<DinnerMenu />} />
         <Route path="/lunch" element={<LunchMenu />} />
         <Route path="/orderonline" element={<OrderOnline />} />
+        <Route path="/catering" element={<Catering />} />
       </Routes>
       <ScrollToTop />
       <SimpleBottomNavigation />
