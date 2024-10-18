@@ -19,7 +19,15 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* Define the fade-in animation */
+
+/* .center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:80vh; 
+} */
+
+
 @keyframes fadeIn {
   from {
     opacity: 0.8;
@@ -33,20 +41,28 @@
 .fade-in {
   animation: fadeIn .5s ease-in;
 }
-/* Add this to your CSS file */
-.mobile-video {
+/* Hide elements by default */
+.desktop-only {
+  display: none;
+  width: 100%;
+  height: 90vh;
+}
+
+.mobile-only {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .mobile-video {
+/* Show video on desktop */
+@media (min-width: 768px) {
+  .desktop-only {
     display: block;
-    width: 100%;
-    height: auto;
   }
+}
 
-  .landing-page-image {
-    display: none;
+/* Show image on mobile */
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block;
   }
 }
 
