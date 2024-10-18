@@ -53,14 +53,14 @@
 }
 
 /* Show video on desktop */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .desktop-only {
     display: block;
   }
 }
 
 /* Show image on mobile */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .mobile-only {
     display: block;
   }
