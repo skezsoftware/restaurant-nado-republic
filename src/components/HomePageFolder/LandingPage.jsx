@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import ReservationButton from "./ReservationButton";
-import landingPageImage from "../../assets/nado-patio-image.jpg";
-import mobileVideo from "../../assets/mobile-video.mp4"; // Import your video file
+import landingPageImage from "../../assets/birthday.jpg";
+import DesktopVideo from "../../assets/desktop-video.mp4"; // Import your video file
 import MiddleHomePage from "./MiddleHomePage";
 import ImageCollage from "./ImageCollage";
 
@@ -16,21 +16,21 @@ export default function LandingPage() {
 
   return (
     <>
-      <section>
+      <section className="center-content">
+      <video
+          className="desktop-only"
+          src={DesktopVideo}
+          autoPlay
+          muted
+          loop
+        />
         <img
-          className="landing-page-image"
+          className="mobile-only landing-page-image"
           src={landingPageImage}
           alt="restaurant patio"
         />
         <ReservationButton />
-        <video
-          className="mobile-video"
-          src={mobileVideo}
-          autoPlay
-          muted
-          loop
-          controls
-        />
+        
       </section>
       <MiddleHomePage />
       <ImageCollage />
