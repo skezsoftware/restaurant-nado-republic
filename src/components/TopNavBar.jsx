@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
-import NadoLogo from "../assets/nado-logo.png";
+import NadoLogo from "../assets/sample_logo.png";
 import "./TopNavBar.css";
 import BasicMenu from "./DifferentMenuDropDown";
 

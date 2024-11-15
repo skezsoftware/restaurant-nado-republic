@@ -4,6 +4,8 @@ import landingPageImage from "../../assets/birthday.jpg";
 import DesktopVideo from "../../assets/desktop-video.mp4"; // Import your video file
 import MiddleHomePage from "./MiddleHomePage";
 import ImageCollage from "./ImageCollage";
+import Map from "../map/Map";
+import Form from "../form/Form";
 
 export default function LandingPage() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
@@ -49,6 +51,8 @@ export default function LandingPage() {
       </section>
       <MiddleHomePage />
       <ImageCollage />
+      <Map />
+      <Form />
     </>
   );
 }
